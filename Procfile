@@ -1,1 +1,1 @@
-web: yarn install --production=false && yarn start
+web: node index.js
