@@ -19,15 +19,14 @@
     "migrate:dev": "npm run migrate:dev --prefix server",
     "migrate:dev:createonly": "npm run migrate:dev:createonly --prefix server",
     "migrate:reset": "npm run migrate:reset --prefix server",
-    "start.old": "run-p start:*",
-    "start": "cd ./server && yarn start",
+    "start": "run-p start:*",
     "start:client": "next start",
     "start:server": "npm start --prefix server",
     "pretest": "npm run generate",
     "test": "jest",
     "pretypecheck": "npm run generate",
     "typecheck": "tsc --noEmit && tsc --noEmit -p server",
-    "heroku:start": "cd ./server && yarn run start:server"
+    "heroku-postbuild": "cd ./server && yarn start"
   },
   "dependencies": {
     "@aspida/axios": "^1.7.1",
