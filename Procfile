@@ -1,2 +1,1 @@
-release: npm install --dev
-web: node index.js
+web: yarn run heroku:start
