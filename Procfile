@@ -1,1 +1,1 @@
-web: yarn run start:server
+web: yarn install --production=false && yarn start
