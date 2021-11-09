@@ -22,7 +22,7 @@
     "migrate:dev": "npm run migrate:dev --prefix server",
     "migrate:dev:createonly": "npm run migrate:dev:createonly --prefix server",
     "migrate:reset": "npm run migrate:reset --prefix server",
-    "start": "run-p start:*",
+    "start": "npm start --prefix server",
     "start:client": "next start",
     "start:server": "npm start --prefix server",
     "pretest": "npm run generate",
