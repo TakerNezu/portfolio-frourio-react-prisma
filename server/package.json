@@ -8,7 +8,7 @@
     "dev:frourio": "frourio --watch",
     "dev:prisma": "prisma generate --watch",
     "prebuild": "npm run generate",
-    "build": "yarn exec webpack -- --mode=develop",
+    "build": "webpack --mode=production",
     "generate": "run-p generate:*",
     "generate:frourio": "frourio",
     "generate:prisma": "prisma generate",
