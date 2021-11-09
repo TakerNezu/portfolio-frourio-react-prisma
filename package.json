@@ -26,7 +26,7 @@
     "test": "jest",
     "pretypecheck": "npm run generate",
     "typecheck": "tsc --noEmit && tsc --noEmit -p server",
-    "heroku-postbuild": "yarn --force && yarn run dev"
+    "heroku-postbuild": "yarn install --production=false --force && yarn run dev"
   },
   "dependencies": {
     "@aspida/axios": "^1.7.1",
