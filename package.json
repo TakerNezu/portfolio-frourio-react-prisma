@@ -1,6 +1,9 @@
 {
   "name": "frourio-app",
   "version": "0.1.0",
+  "engines": {
+    "yarn": "1.x"
+  },
   "private": true,
   "scripts": {
     "dev": "npm run migrate:dev && run-p dev:*",
