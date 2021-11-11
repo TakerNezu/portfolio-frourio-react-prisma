@@ -1,4 +1,4 @@
-FROM node:16.10.1
+FROM node:16
 ENV NODE_ENV=develop
 
 RUN mkdir /src
