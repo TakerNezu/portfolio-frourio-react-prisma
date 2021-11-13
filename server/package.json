@@ -6,7 +6,7 @@
     "dev": "npm run migrate:dev && run-p dev:*",
     "dev:server": "webpack --watch --mode=development",
     "dev:frourio": "frourio --watch",
-    "dev:prisma": "prisma generate --watch",
+    "dev2:prisma": "prisma generate --watch",
     "prebuild": "npm run generate",
     "build": "webpack",
     "generate": "run-p generate:*",
