@@ -11,5 +11,4 @@ RUN yarn install --cwd ./server
 
 COPY . .
 
-EXPOSE 5000
 CMD echo "im docker" && yarn && yarn migrate:dev && yarn generate:server && yarn build:server && yarn start:server
