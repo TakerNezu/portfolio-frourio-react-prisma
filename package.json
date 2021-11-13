@@ -7,7 +7,7 @@
     "dev:client": "next dev -p 8000",
     "dev:server": "npm run dev --prefix server",
     "dev:aspida": "aspida --watch",
-    "build": "run-p build:server",
+    "build": "run-p build:client build:server",
     "prebuild:client": "npm run generate",
     "build:client": "next build && next export",
     "build:server": "npm run build --prefix server",
@@ -25,8 +25,7 @@
     "pretest": "npm run generate",
     "test": "jest",
     "pretypecheck": "npm run generate",
-    "typecheck": "tsc --noEmit && tsc --noEmit -p server",
-    "heroku-prebuild": "yarn add webpack webpack-cli tsconfig-paths-webpack-plugin webpack-node-externals nodemon-webpack-plugin -D"
+    "typecheck": "tsc --noEmit && tsc --noEmit -p server"
   },
   "dependencies": {
     "@aspida/axios": "^1.7.1",
