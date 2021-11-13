@@ -15,4 +15,4 @@ EXPOSE 5000
 EXPOSE 8080
 EXPOSE 5432
 
-CMD yarn && yarn dev:server
+CMD sudo sysctl fs.inotify.max_user_watches=524288 && yarn && yarn dev:server
