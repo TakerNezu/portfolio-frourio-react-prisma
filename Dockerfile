@@ -15,4 +15,4 @@ EXPOSE 5000
 EXPOSE 8080
 EXPOSE 5432
 
-CMD echo "im docker" && yarn && yarn migrate:dev && yarn generate:server && yarn build:server && yarn start:server
+CMD echo "im docker" && yarn && yarn generate:server && yarn build:server && yarn start:server
