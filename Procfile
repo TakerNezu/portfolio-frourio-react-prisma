@@ -1,1 +1,1 @@
-web: webpack --mode=production
+web: yarn start:server
