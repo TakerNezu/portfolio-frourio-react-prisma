@@ -1,1 +1,1 @@
-web: cross-env NODE_ENV=develop node index.js
+web: yarn start:server
