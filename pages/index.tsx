@@ -59,7 +59,7 @@ const Home = () => {
         <div>
           <form style={{ textAlign: 'center' }} onSubmit={createTask}>
             <input value={label} type="text" onChange={inputLabel} />
-            <input type="submit" value="ADD" />
+            <input type="submit" value="タスクを追加" />
           </form>
           <ul className={styles.tasks}>
             {tasks.map((task) => (
@@ -74,7 +74,7 @@ const Home = () => {
                 </label>
                 <input
                   type="button"
-                  value="DELETE"
+                  value="タスクを削除"
                   style={{ float: 'right' }}
                   onClick={() => deleteTask(task)}
                 />
