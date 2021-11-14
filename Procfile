@@ -1,1 +1,1 @@
-web: cross-env NODE_ENV=production node index.js
+web: cross-env NODE_ENV=develop node index.js
