@@ -22,7 +22,7 @@
     "start": "run-p start:*",
     "start:client": "next start",
     "start:server": "npm start --prefix server",
-    "start:mock-server": "json-server --watch server/json/index.ts --port 3004",
+    "start:mock-server": "json-server --watch server/json/index.js --port 3004",
     "pretest": "npm run generate",
     "test": "jest",
     "pretypecheck": "npm run generate",

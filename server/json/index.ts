@@ -1,5 +1,6 @@
 // prismaのseeder側で問題出るので、JSで行う
 import { Comment, Post, Profile } from '@prisma/client'
+import data from './data.json'
 
 interface DbData {
   post: Array<Post>,
@@ -7,16 +8,6 @@ interface DbData {
   profile: Array<Profile>
 }
 
-const data: DbData = {
-  "post": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
-  ],
-  "comment": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": [
-    { "id": 1, "name": "typicode" }
-  ]
-}
+const internalData: DbData = data
 
-export default data
+export default internalData

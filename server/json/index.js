@@ -1,3 +1,5 @@
-import data from './index'
+const data = require('./data.json');
 
-export 
+module.exports = () => {
+  return data
+}
