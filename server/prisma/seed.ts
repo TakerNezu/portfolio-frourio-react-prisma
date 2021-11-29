@@ -1,13 +1,13 @@
 /* eslint-disable no-console */
 /* eslint no-void: ["error", { "allowAsStatement": true }] */
 import { PrismaClient } from '@prisma/client'
-import data from '$/json'
+import { DbData } from '$/json'
 
 const prisma = new PrismaClient()
 
 async function main() {
 
-  for (const [key, value] of Object.entries(data)) {
+  for (const [key, value] of Object.entries(DbData)) {
     const client = prisma[key as keyof PrismaClient] as any
     for (const seed of value) {
       await client.upsert({
