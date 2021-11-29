@@ -5,8 +5,9 @@
     "emitDecoratorMetadata": true,
     "esModuleInterop": true,
     "lib": ["dom"],
-    "module": "esnext",
+    "module": "commonjs",
     "moduleResolution": "node",
+    "resolveJsonModule": true,
     "baseUrl": ".",
     "paths": {
       "$/*": ["./*"],
