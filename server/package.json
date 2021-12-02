@@ -13,7 +13,7 @@
     "generate:frourio": "frourio",
     "generate:prisma": "prisma generate",
     "migrate:dev": "prisma migrate dev && prisma db seed --preview-feature",
-    "migrate:dev:createonly":"prisma migrate dev --create-only",
+    "migrate:dev:createonly": "prisma migrate dev --create-only",
     "migrate:reset": "prisma migrate reset",
     "pm2:start": "pm2 start pm2.config.json --env production",
     "pm2:stop": "pm2 stop pm2.config.json",
@@ -23,6 +23,9 @@
     "start": "cross-env NODE_ENV=production node index.js"
   },
   "dependencies": {
+    "@grapecity/activereports": "^2.2.1",
+    "@grapecity/activereports-localization": "^2.2.2",
+    "@grapecity/activereports-react": "^2.2.1",
     "@prisma/client": "^2.21.2",
     "class-validator": "^0.13.1",
     "dotenv": "^8.2.0",
